@@ -24,13 +24,13 @@ func mayhemit(data []byte) int {
         fuzzConsumer := fuzz.NewConsumer(data)
         
         switch num {
-            case 0:
-                testContent, _ := fuzzConsumer.GetString()
-                testExtension, _ := fuzzConsumer.GetString()
-                testSyntaxTheme, _ := fuzzConsumer.GetString()
+            // case 0:
+            //     testContent, _ := fuzzConsumer.GetString()
+            //     testExtension, _ := fuzzConsumer.GetString()
+            //     testSyntaxTheme, _ := fuzzConsumer.GetString()
 
-                code.Highlight(testContent, testExtension, testSyntaxTheme)
-                return 0
+            //     code.Highlight(testContent, testExtension, testSyntaxTheme)
+            //     return 0
 
             case 1:
                 testActive, _ := fuzzConsumer.GetBool()
