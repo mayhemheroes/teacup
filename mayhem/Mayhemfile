@@ -1,0 +1,6 @@
+project: teacup
+target: fuzzteacup
+
+cmds:
+  - cmd: /mayhem/fuzzteacup
+    libfuzzer: true
